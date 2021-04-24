@@ -1,0 +1,9 @@
+<div  #card class="card" [class.toggle]="toggle" (click)="sendState()">
+  <div class="card-img-top" >
+    <img [src]="model.avatar" class="rounded mx-auto d-block" width="70" height="70">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">{{model.first_name + ' ' + model.last_name}}</h5>
+    <p class="card-text text-center">{{model.email}}</p>
+  </div>
+</div>

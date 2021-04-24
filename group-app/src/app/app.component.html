@@ -1,0 +1,7 @@
+<div class="row " *ngFor="let item of list" >
+<div class="col-3">
+
+    <card [model]="item" [validation]="validation" (cardState)="getState($event)" ></card>
+
+</div>
+</div>
